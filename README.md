@@ -11,7 +11,7 @@ Driver for MAX31865 resistance converter for platinum RTDs.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/max31865^1.0.0
+idf.py add-dependency esp-idf-lib/max31865^1.0.0
 ```
 
 ## Support
