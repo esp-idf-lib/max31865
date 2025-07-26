@@ -1,5 +1,5 @@
 ---
-version: 1.0.4
+version: 1.0.5
 description: Driver for MAX31865 resistance converter for platinum RTDs
 license: BSD-3
 targets:
