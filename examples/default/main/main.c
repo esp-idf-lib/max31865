@@ -42,7 +42,8 @@
 
 static const char *TAG = "max31865-example";
 
-static max31865_config_t config = {
+static max31865_config_t config =
+{
     .v_bias = true,
     .filter = FILTER,
     .mode = MAX31865_MODE_SINGLE,
@@ -52,19 +53,21 @@ static max31865_config_t config = {
 static void task(void *pvParameter)
 {
     // Configure SPI bus
-    spi_bus_config_t cfg = {
-       .mosi_io_num = CONFIG_EXAMPLE_MOSI_GPIO,
-       .miso_io_num = CONFIG_EXAMPLE_MISO_GPIO,
-       .sclk_io_num = CONFIG_EXAMPLE_SCLK_GPIO,
-       .quadwp_io_num = -1,
-       .quadhd_io_num = -1,
-       .max_transfer_sz = 0,
-       .flags = 0
+    spi_bus_config_t cfg =
+    {
+        .mosi_io_num = CONFIG_EXAMPLE_MOSI_GPIO,
+        .miso_io_num = CONFIG_EXAMPLE_MISO_GPIO,
+        .sclk_io_num = CONFIG_EXAMPLE_SCLK_GPIO,
+        .quadwp_io_num = -1,
+        .quadhd_io_num = -1,
+        .max_transfer_sz = 0,
+        .flags = 0
     };
     ESP_ERROR_CHECK(spi_bus_initialize(HOST, &cfg, 1));
 
     // Init device
-    max31865_t dev = {
+    max31865_t dev =
+    {
         .standard = RTD_STANDARD,
         .r_ref = CONFIG_EXAMPLE_RTD_REF,
         .rtd_nominal = CONFIG_EXAMPLE_RTD_NOMINAL,

@@ -65,10 +65,11 @@ typedef struct
     float a, b;
 } rtd_coeff_t;
 
-static const rtd_coeff_t rtd_coeff[] = {
-     [MAX31865_ITS90]         = { .a = 3.9083e-3f, .b = -5.775e-7f },
-     [MAX31865_DIN43760]      = { .a = 3.9848e-3f, .b = -5.8019e-7f },
-     [MAX31865_US_INDUSTRIAL] = { .a = 3.9692e-3f, .b = -5.8495e-7f },
+static const rtd_coeff_t rtd_coeff[] =
+{
+    [MAX31865_ITS90]         = { .a = 3.9083e-3f, .b = -5.775e-7f },
+    [MAX31865_DIN43760]      = { .a = 3.9848e-3f, .b = -5.8019e-7f },
+    [MAX31865_US_INDUSTRIAL] = { .a = 3.9692e-3f, .b = -5.8495e-7f },
 };
 
 #define CHECK(x) do { esp_err_t __; if ((__ = x) != ESP_OK) return __; } while (0)

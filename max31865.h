@@ -54,7 +54,8 @@ extern "C" {
 /**
  * Conversion mode
  */
-typedef enum {
+typedef enum
+{
     MAX31865_MODE_SINGLE = 0, /**< Single consersion mode, default */
     MAX31865_MODE_AUTO        /**< Automatic conversion mode at 50/60Hz rate */
 } max31865_mode_t;
@@ -62,7 +63,8 @@ typedef enum {
 /**
  * Notch frequencies for the noise rejection filter
  */
-typedef enum {
+typedef enum
+{
     MAX31865_FILTER_60HZ = 0, /**< 60Hz */
     MAX31865_FILTER_50HZ      /**< 50Hz */
 } max31865_filter_t;
@@ -70,7 +72,8 @@ typedef enum {
 /**
  * Connection type
  */
-typedef enum {
+typedef enum
+{
     MAX31865_2WIRE = 0, /**< 2 wires */
     MAX31865_3WIRE,     /**< 3 wires */
     MAX31865_4WIRE      /**< 4 wires */
@@ -90,7 +93,8 @@ typedef struct
 /**
  * Temperature scale standard
  */
-typedef enum {
+typedef enum
+{
     MAX31865_ITS90 = 0,    /**< ITS-90 */
     MAX31865_DIN43760,     /**< DIN43760 */
     MAX31865_US_INDUSTRIAL /**< US INDUSTRIAL */
