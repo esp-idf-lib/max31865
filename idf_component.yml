@@ -1,7 +1,7 @@
 ---
 version: 1.0.9
 description: Driver for MAX31865 resistance converter for platinum RTDs
-license: BSD-3
+license: BSD-3-Clause
 dependencies: {}
 url: https://github.com/esp-idf-lib/core
 repository: https://github.com/esp-idf-lib/max31865
